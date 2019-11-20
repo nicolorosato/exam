@@ -1,4 +1,5 @@
 #! /usr/bin/env python3
+import sys
 
 '''
 From module Capitals we import both the key and the value in order to make available the function.
@@ -6,8 +7,6 @@ From module Capitals we import both the key and the value in order to make avail
 
 from capitals import check_capital, check_state
 
-check_capital("Germany")
-check_capital("Honduras")
-check_state("Rome")
-check_state("Tokyo")
+check_capital(sys.argv[1])
+check_state(sys.argv[2])
 
