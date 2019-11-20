@@ -1,3 +1,7 @@
+'''
+This is a dictionary that list all the State of EU linked to respective Capital City
+'''
+
 list_of_capitals = {'Aland Islands':'Mariehamn',
 'Albania':'Tirana',
 'Andorra':'Andorra la Vella',
@@ -57,11 +61,19 @@ list_of_capitals = {'Aland Islands':'Mariehamn',
 'United Kingdom':'London',
 'Vatican City':'Vatican City'}
 
+'''
+The first function check_capital control if, given a name of a country, this country is an European state.
+'''
+
 def check_capital(state_name):
     if state_name in list_of_capitals:
         print("The capital of {} is {}".format(state_name, list_of_capitals[state_name]))
     else:
         print("Sorry, {} does not seem to be an European state".format(state_name))
+
+'''
+The second function capital_name, given a name of a capital, it returns the name of the country whose capital is equal to the input.
+'''
 
 def check_state(capital_name):
     for state, capital in list_of_capitals.items():
