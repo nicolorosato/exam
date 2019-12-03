@@ -19,5 +19,6 @@ def check_capital(state):
     if state in d.keys():
         return (d[state])
     else:
+
         return("Sorry, {} does not seem to be an European state".
                format(state))
