@@ -3,7 +3,8 @@ import csv
 '''Reading csv file as dictionary
 
 '''
-csv_path= 'data/capitals.csv'
+
+csv_path = 'data/capitals.csv'
 
 reader = csv.reader(open(csv_path, 'r'))
 d = {}
