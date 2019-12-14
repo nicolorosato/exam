@@ -4,10 +4,7 @@ from myfolder.test import csv_reader
 from myfolder.test import type_file
 import os
 
-'''It is necessary to put your personal
 
-path directory to the csv file.
-'''
 sys.path.append('/Users/nicolorosato/capitals/data/capitals.csv')
 
 
