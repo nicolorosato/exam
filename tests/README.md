@@ -25,9 +25,9 @@ Through the module ```test_csv.py``` we check the ```test.py``` module in which 
 
 Note Well: Since we found some problmes, in order to run correctly this piece of program it is necessary to insert the path of the CSV according to your terminal files' collocation. More specifically you have to modify the path in two different point of the code:
 
-1. In the file ```test_csv.py```, inside ```tests```, in line 3.
+1. In the file ```test_csv.py```, inside ```tests```, in line 11.
 
-2. In the file ```test.py```, inside ```myfolder```, in line 18.
+2. In the file ```test.py```, inside ```myfolder```, in line 27.
 
 If you follow the instructions, everything works fine.
 
