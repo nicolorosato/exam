@@ -18,8 +18,7 @@ class TestMain(unittest.TestCase):
     '''
 
     def test_no_datafile(self):
-        datafile = csv_reader(path=self.temporary_file)
-        self.assertIn(".csv", self.temporary_file)
+        self.assertFalse(os.path.exists("data/lorem_ipsum.csv"))
 
     '''This function is necessary to check
 
