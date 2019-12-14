@@ -15,8 +15,8 @@ The first thing you should do is to download the repository and populate the dat
 
 ```
 [12/14/19]seed@VM:~/exam$
-[12/14/19]seed@VM:~/.../scripts$ python3 dbmanager.py -a Paolo -p Zp7$.dag.rem97?
-User Paolo succesfully added to data.db
+[12/14/19]seed@VM:~/.../scripts$ python3 dbmanager.py -a Lorem -p Zp7$.dag.rem97?
+User Lorem succesfully added to data.db
 
 ```
    Note well: you must remember your password by heart, later it is necessary to authenticate yourself before starting using      the main.py module. By the way, after you have run the dbmanager.py module, your username and password are stored in a        database called data.db. ```Here your password is salted and the salted password is hashed one hundred thousands              times.``` 
@@ -37,7 +37,7 @@ The next step involves running the ```main.py module```, where the core of the a
  
  ```
 [12/14/19]seed@VM:~/.../scripts$  
-[12/14/19]seed@VM:~/exam$ -c Paolo -p Zp7$.dag.rem97? Spain
+[12/14/19]seed@VM:~/exam$ -c Lorem -p Zp7$.dag.rem97? Spain
 Username Correct.
 Password Correct.
 You are allowed to access the program!
@@ -56,21 +56,21 @@ If you typed a state that is not in the EU, you would receive an error message, 
 Example, with mispelled username or password, and state name with first lower case letter.  
 
  ```
-[12/14/19]seed@VM:~/exam$ python main.py -c paolo  -p Zp7$.dag.rem97? Spain 
+[12/14/19]seed@VM:~/exam$ python main.py -c lorem  -p Zp7$.dag.rem97? Spain 
 Invalid Username
 Please, Check Your Username...
 
-[12/14/19]seed@VM:~/exam$ python main.py -c Paolo  -p ZP7?$.dag.rex97 Spain 
+[12/14/19]seed@VM:~/exam$ python main.py -c Lorem  -p ZP7?$.dag.rex97 Spain 
 Invalid Password.
 Please, Check Your Password...
 
-[12/14/19]seed@VM:~/exam$ python main.py -c Paolo  -p Zp7$.dag.rem97? spain 
+[12/14/19]seed@VM:~/exam$ python main.py -c Lorem  -p Zp7$.dag.rem97? spain 
 Username Correct.
 Password Correct.
 You are allowed to access the program!
 Sorry, spain does not seem to be an European state.
 
-[12/14/19]seed@VM:~/exam$ python main.py -c Paolo  -p Zp7$.dag.rem97? Egypt 
+[12/14/19]seed@VM:~/exam$ python main.py -c Lorem  -p Zp7$.dag.rem97? Egypt 
 Username Correct.
 Password Correct.
 You are allowed to access the program!
@@ -88,7 +88,7 @@ For more information, you can increase the output verbosity of the program, addi
 With the -v option, you obtain extra information about the positional argument, namely ```'the EU's state capital of Italy is Rome'```  instead of the mere output ``` Rome.``` 
 
 ``` 
-[12/14/19]seed@VM:~/capitals$ python main.py -c Paolo  -p Zp7$.dag.rem97? Spain -v  
+[12/14/19]seed@VM:~/capitals$ python main.py -c Lorem  -p Zp7$.dag.rem97? Spain -v  
 Username Correct.
 Password Correct.
 You are allowed to access the program!
@@ -98,7 +98,7 @@ The Eu state's capital of Spain is Madrid
 With the -vv option, you obtain more debug information about what the program is currently doing. When finished with debug information, the capital of the EU' state, it is also displayed. 
 
 ``` 
-[12/14/19]seed@VM:~/capitals$ python main.py -c Paolo  -p Zp7$.dag.rem97?7 Spain -vv
+[12/14/19]seed@VM:~/capitals$ python main.py -c Lorem  -p Zp7$.dag.rem97?7 Spain -vv
 Username Correct.
 Password Correct.
 You are allowed to access the program!
