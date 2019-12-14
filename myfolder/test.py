@@ -24,4 +24,4 @@ def csv_reader(path):
         d[k] = v
 
 
-csv_reader('/home/seed/capitals/data/capitals.csv')
+csv_reader('data/capitals.csv')
