@@ -18,11 +18,12 @@ class TestMain(unittest.TestCase):
         f = open(self.temporary_file, 'w')
         f.close()
 
-'''This function is necessary to check 
+
+'''This function is necessary to check
 
 the existence of the csv file.
 '''
-    
+
     def test_no_datafile(self):
         datafile = csv_reader(path=self.temporary_file)
         self.assertIn(".csv", self.temporary_file)

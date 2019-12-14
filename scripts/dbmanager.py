@@ -64,7 +64,7 @@ def save_new_username(username, password):
     cursor.execute("INSERT OR REPLACE INTO user VALUES (?,?,?)",
                    (username, digest, salt))
     conn.commit()
-    print ("User {} succesfully added to data.db".format(username))
+    print("User {} succesfully added to data.db".format(username))
 
 
 open_and_create()
@@ -73,6 +73,6 @@ args = parse_args()
 if args.a and args.p:
     save_new_username(args.a, args.p)
 else:
-    print ("Something went wrong...")
+    print("Something went wrong...")
 
 conn.close()

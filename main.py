@@ -47,14 +47,16 @@ def check_for_user(username, password):
 
     conn = sqlite3.connect(dbpath)
     cursor = conn.cursor()
-    salt = cursor.execute("SELECT salt FROM user WHERE username=?", (username,))
+    salt = cursor.execute(
+        "SELECT salt FROM user WHERE username=?", (username,))
     salt = salt.fetchall()
     if salt == []:
         print('Invalid Username')
         print('Please, Check Your Username...')
         quit()
     salt = salt[0][0]
-    results = cursor.execute("SELECT digest FROM user WHERE username=?", (username,))
+    results = cursor.execute(
+        "SELECT digest FROM user WHERE username=?", (username,))
     results = results.fetchall()[0][0]
     digest = salt + password
     for i in range(1000000):
