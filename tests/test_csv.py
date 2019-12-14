@@ -28,16 +28,16 @@ the existence of the csv file.
         datafile = csv_reader(path=self.temporary_file)
         self.assertIn(".csv", self.temporary_file)
 
- '''This function is necessary to check 
+'''This function is necessary to check 
 
 the presence of data inside the csv file.
 '''
-         
+
     def test_empty_datafile(self):
         datafile = csv_reader(path=self.temporary_file)
         self.assertFalse(datafile)
 
-  '''This function is necessary to check 
+'''This function is necessary to check 
 
 the extension of the file.
 
@@ -48,6 +48,6 @@ the extension of the file.
 
     def tearDown(self):
         os.remove(self.temporary_file)
-        
+
 if __name__ == '__main__':
     unittest.main()
